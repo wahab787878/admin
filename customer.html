@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2>Admin panel</h2>
+        <div class="avatar">
+            <img src="data:image/jpeg;base64,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"
+                alt="">
+        </div>
+    </div>
+    <div class="sidebar">
+        <a href="/home.html">🏠Home</a>
+        <a href="/Order.html">🛒Order</a>
+        <a href="/Product.html">📦Products</a>
+        <a href="#">👥Customer</a>
+        <a href="/setting.html">⚙Setting</a>
+        <a href="/index.html">Log Out🚪</a>
+    </div>
+    <div class="main-contant">
+        <div class="customer-box">
+            <div class="cards">
+
+    <div class="card">
+        <h3>Total Customers</h3>
+        <h1>10</h1>
+    </div>
+
+    <div class="card">
+        <h3>Active</h3>
+        <h1>5</h1>
+    </div>
+
+    <div class="card">
+        <h3>Pending</h3>
+        <h1>3</h1>
+    </div>
+
+    <div class="card">
+        <h3>Cancelled</h3>
+        <h1>2</h1>
+    </div>
+
+</div>
+
+           <div class="customer-header">
+
+    <h2>Customer Management</h2>
+
+    <div class="search-box">
+
+        <input type="text" placeholder="Search Customer">
+
+        <button class="add-btn">+ Add Customer</button>
+
+    </div>
+
+</div>
+
+            <table>
+
+                <thead>
+
+                  
+
+
+
+                    <tr>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+
+                    </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td><img src="https://randomuser.me/api/portraits/men/1.jpg"></td>
+                        <td>Ali Khan</td>
+                        <td>+92 3001234567</td>
+                        <td>ali@gmail.com</td>
+                        <td>Karachi, Pakistan</td>
+                        <td><span class="active">Active</span></td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://randomuser.me/api/portraits/men/8.jpg"></td>
+                        <td>Usman Ahmed</td>
+                        <td>+92 3012233445</td>
+                        <td>usman@gmail.com</td>
+                        <td>Lahore, Pakistan</td>
+                        <td><span class="pending">Pending</span></td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://randomuser.me/api/portraits/women/12.jpg"></td>
+                        <td>Ayesha Noor</td>
+                        <td>+92 3023344556</td>
+                        <td>ayesha@gmail.com</td>
+                        <td>Islamabad, Pakistan</td>
+                        <td><span class="active">Active</span></td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://randomuser.me/api/portraits/men/18.jpg"></td>
+                        <td>Hamza Ali</td>
+                        <td>+92 3034455667</td>
+                        <td>hamza@gmail.com</td>
+                        <td>Multan, Pakistan</td>
+                        <td><span class="cancel">Cancel</span></td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://randomuser.me/api/portraits/women/20.jpg"></td>
+                        <td>Fatima Khan</td>
+                        <td>+92 3045566778</td>
+                        <td>fatima@gmail.com</td>
+                        <td>Peshawar, Pakistan</td>
+                        <td><span class="active">Active</span></td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://randomuser.me/api/portraits/men/24.jpg"></td>
+                        <td>Bilal Ahmed</td>
+                        <td>+92 3056677889</td>
+                        <td>bilal@gmail.com</td>
+                        <td>Quetta, Pakistan</td>
+                        <td><span class="pending">Pending</span></td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://randomuser.me/api/portraits/women/30.jpg"></td>
+                        <td>Sana Malik</td>
+                        <td>+92 3067788990</td>
+                        <td>sana@gmail.com</td>
+                        <td>Hyderabad, Pakistan</td>
+                        <td><span class="active">Active</span></td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://randomuser.me/api/portraits/men/35.jpg"></td>
+                        <td>Ahmed Raza</td>
+                        <td>+92 3078899001</td>
+                        <td>ahmed@gmail.com</td>
+                        <td>Faisalabad, Pakistan</td>
+                        <td><span class="cancel">Cancel</span></td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://randomuser.me/api/portraits/women/40.jpg"></td>
+                        <td>Zainab Ali</td>
+                        <td>+92 3089900112</td>
+                        <td>zainab@gmail.com</td>
+                        <td>Sialkot, Pakistan</td>
+                        <td><span class="pending">Pending</span></td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://randomuser.me/api/portraits/men/45.jpg"></td>
+                        <td>Umer Farooq</td>
+                        <td>+92 3091122334</td>
+                        <td>umer@gmail.com</td>
+                        <td>Rawalpindi, Pakistan</td>
+                        <td><span class="active">Active</span></td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
